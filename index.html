@@ -23,19 +23,19 @@
 
   <style>
     :root{
-      --bg:#2a1338;
-      --bg2:#34184a;
-      --bg3:#46235f;
-      --card:rgba(255,255,255,0.07);
-      --card-strong:rgba(255,255,255,0.11);
-      --border:rgba(255,255,255,0.13);
-      --text:#ffffff;
-      --muted:rgba(255,255,255,0.84);
-      --soft:rgba(255,255,255,0.72);
-      --gold:#d4af37;
-      --gold2:#f6d365;
-      --gold-soft:rgba(212,175,55,0.19);
-      --shadow:0 18px 48px rgba(0,0,0,0.32);
+      --bg:#f1dc85;
+      --bg2:#e3c457;
+      --bg3:#cfa93b;
+      --card:rgba(255,255,255,0.42);
+      --card-strong:rgba(255,255,255,0.56);
+      --border:rgba(120,86,16,0.18);
+      --text:#3b2a0d;
+      --muted:rgba(59,42,13,0.80);
+      --soft:rgba(59,42,13,0.68);
+      --gold:#c79d2b;
+      --gold2:#f2df95;
+      --gold-soft:rgba(199,157,43,0.16);
+      --shadow:0 18px 48px rgba(77,54,8,0.16);
       --radius:24px;
       --radius-sm:16px;
       --max:1240px;
@@ -56,17 +56,18 @@
       font-family:"Poppins",sans-serif;
       color:var(--text);
       line-height:1.7;
+      overflow-x:hidden;
       background:
-        linear-gradient(rgba(120,75,160,.55), rgba(120,75,160,.65)),
-        radial-gradient(circle at 18% 16%, rgba(246,211,101,.45), transparent 35%),
-        radial-gradient(circle at 82% 22%, rgba(212,175,55,.35), transparent 32%),
-        radial-gradient(circle at 60% 70%, rgba(255,223,120,.18), transparent 40%),
+        linear-gradient(rgba(79,52,8,.16), rgba(79,52,8,.16)),
+        radial-gradient(circle at 20% 12%, rgba(255,248,205,.55), transparent 32%),
+        radial-gradient(circle at 82% 20%, rgba(212,175,55,.18), transparent 30%),
+        radial-gradient(circle at 50% 75%, rgba(255,235,170,.18), transparent 38%),
         url("images/pattern.webp");
+      background-color:#e2c85a;
       background-repeat:repeat;
-      background-size:520px auto;
+      background-size:420px auto;
       background-position:center top;
       background-attachment:fixed;
-      overflow-x:hidden;
     }
 
     img{
@@ -85,9 +86,9 @@
     }
 
     .announcement-bar{
-      background:linear-gradient(90deg, rgba(246,211,101,.18), rgba(212,175,55,.08));
-      border-bottom:1px solid rgba(255,255,255,.08);
-      color:#fff5d8;
+      background:linear-gradient(90deg, rgba(255,244,196,.82), rgba(214,175,70,.34));
+      border-bottom:1px solid rgba(120,86,16,.10);
+      color:#5a3d0b;
       font-size:.92rem;
     }
 
@@ -105,8 +106,8 @@
       top:0;
       z-index:1000;
       backdrop-filter:blur(14px);
-      background:rgba(30,12,42,0.78);
-      border-bottom:1px solid rgba(255,255,255,0.08);
+      background:rgba(245,229,170,0.72);
+      border-bottom:1px solid rgba(120,86,16,0.14);
     }
 
     .nav{
@@ -129,7 +130,7 @@
       width:64px;
       height:64px;
       object-fit:contain;
-      filter:drop-shadow(0 10px 18px rgba(0,0,0,.35));
+      filter:drop-shadow(0 10px 18px rgba(0,0,0,.20));
       flex-shrink:0;
     }
 
@@ -141,7 +142,7 @@
       display:block;
       font-family:"Cormorant Garamond",serif;
       font-size:1.85rem;
-      color:var(--gold2);
+      color:#8b6512;
       line-height:1;
       letter-spacing:.02em;
     }
@@ -149,7 +150,7 @@
     .brand-text span{
       display:block;
       font-size:.86rem;
-      color:rgba(255,255,255,.74);
+      color:rgba(59,42,13,.72);
       margin-top:3px;
     }
 
@@ -159,7 +160,7 @@
       justify-content:flex-end;
       gap:14px;
       font-size:.93rem;
-      color:rgba(255,255,255,.92);
+      color:rgba(59,42,13,.92);
       margin-left:auto;
       max-width:720px;
     }
@@ -171,7 +172,7 @@
     }
 
     .nav-links a:hover{
-      color:var(--gold2);
+      color:#8b6512;
     }
 
     .hero{
@@ -181,9 +182,9 @@
       position:relative;
       overflow:hidden;
       background:
-        linear-gradient(rgba(0,0,0,.44), rgba(0,0,0,.78)),
-        radial-gradient(circle at 15% 18%, rgba(246,211,101,.16), transparent 24%),
-        radial-gradient(circle at 82% 24%, rgba(212,175,55,.12), transparent 20%),
+        linear-gradient(rgba(56,37,8,.34), rgba(56,37,8,.58)),
+        radial-gradient(circle at 15% 18%, rgba(255,241,183,.20), transparent 24%),
+        radial-gradient(circle at 82% 24%, rgba(212,175,55,.16), transparent 20%),
         url("images/hero.webp");
       background-size:cover;
       background-position:center;
@@ -193,7 +194,7 @@
       content:"";
       position:absolute;
       inset:0;
-      background:linear-gradient(180deg, transparent 0%, rgba(42,19,56,.10) 60%, rgba(42,19,56,.56) 100%);
+      background:linear-gradient(180deg, transparent 0%, rgba(92,64,10,.10) 60%, rgba(92,64,10,.34) 100%);
       pointer-events:none;
     }
 
@@ -204,7 +205,7 @@
       bottom:-110px;
       width:360px;
       height:360px;
-      background:radial-gradient(circle, rgba(212,175,55,.16), transparent 70%);
+      background:radial-gradient(circle, rgba(242,223,149,.26), transparent 70%);
       pointer-events:none;
     }
 
@@ -224,17 +225,18 @@
       gap:8px;
       padding:10px 16px;
       border-radius:999px;
-      background:rgba(255,255,255,.09);
-      border:1px solid rgba(255,255,255,.14);
-      color:var(--gold2);
+      background:rgba(255,248,225,.18);
+      border:1px solid rgba(255,248,225,.30);
+      color:#fff7e6;
       font-size:.92rem;
       margin-bottom:20px;
+      backdrop-filter:blur(6px);
     }
 
     .hero-logo{
       width:min(240px, 48vw);
       margin:0 auto 22px;
-      filter:drop-shadow(0 14px 26px rgba(0,0,0,.48));
+      filter:drop-shadow(0 14px 26px rgba(0,0,0,.32));
     }
 
     h1,h2,h3,h4{
@@ -253,7 +255,7 @@
       max-width:860px;
       margin:0 auto;
       font-size:1.08rem;
-      color:rgba(255,255,255,.92);
+      color:rgba(255,250,236,.96);
     }
 
     .hero p + p{
@@ -276,11 +278,12 @@
       min-height:52px;
       padding:13px 20px;
       border-radius:14px;
-      border:1px solid rgba(255,255,255,.14);
-      background:rgba(255,255,255,.05);
-      color:#fff;
+      border:1px solid rgba(133,96,18,.16);
+      background:rgba(255,255,255,.18);
+      color:#4a340f;
       font-weight:600;
       transition:.22s ease;
+      backdrop-filter:blur(5px);
     }
 
     .btn:hover{
@@ -289,14 +292,16 @@
     }
 
     .btn.primary{
-      background:linear-gradient(135deg, var(--gold2), var(--gold));
-      color:#2a1202;
-      border-color:rgba(212,175,55,.34);
-      box-shadow:0 16px 34px rgba(212,175,55,.18);
+      background:linear-gradient(135deg, #f7e7ab, #c79d2b);
+      color:#3b2807;
+      border-color:rgba(160,117,18,.24);
+      box-shadow:0 16px 34px rgba(199,157,43,.24);
     }
 
     .btn.secondary{
-      background:rgba(255,255,255,.08);
+      background:rgba(255,250,239,.22);
+      color:#fff8ea;
+      border-color:rgba(255,244,215,.22);
     }
 
     .hero-facts{
@@ -310,10 +315,11 @@
     .hero-facts span{
       padding:9px 14px;
       border-radius:999px;
-      background:rgba(255,255,255,.08);
-      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,250,239,.14);
+      border:1px solid rgba(255,250,239,.18);
       font-size:.92rem;
-      color:rgba(255,255,255,.94);
+      color:#fff8ea;
+      backdrop-filter:blur(5px);
     }
 
     section{
@@ -330,7 +336,7 @@
 
     .section-head h2{
       font-size:clamp(2.3rem, 4vw, 3.25rem);
-      color:var(--gold2);
+      color:#8b6512;
     }
 
     .section-head p{
@@ -354,10 +360,11 @@
     .highlight-box,
     .price-table,
     .promo-box{
-      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      background:linear-gradient(180deg, rgba(255,252,243,.52), rgba(255,246,220,.30));
       border:1px solid var(--border);
       border-radius:var(--radius);
       box-shadow:var(--shadow);
+      backdrop-filter:blur(8px);
     }
 
     .card,
@@ -397,10 +404,10 @@
       gap:8px;
       padding:9px 13px;
       border-radius:999px;
-      background:rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,249,230,.58);
+      border:1px solid rgba(157,117,25,.16);
       font-size:.88rem;
-      color:#fff;
+      color:#5a3d0b;
     }
 
     .promo-grid{
@@ -415,7 +422,7 @@
     }
 
     .promo-box h3{
-      color:#fff7e3;
+      color:#6f5010;
       font-size:1.7rem;
       margin-bottom:8px;
     }
@@ -433,7 +440,7 @@
     }
 
     .feature-box h3{
-      color:#fff7e3;
+      color:#6f5010;
       font-size:1.7rem;
       margin-bottom:8px;
     }
@@ -462,7 +469,7 @@
 
     .announcement .info-box h3{
       font-size:2.05rem;
-      color:#fff7e3;
+      color:#6f5010;
       margin-bottom:10px;
     }
 
@@ -514,7 +521,7 @@
 
     .service-content h3{
       font-size:1.8rem;
-      color:#fff7e3;
+      color:#6f5010;
       margin-bottom:8px;
     }
 
@@ -534,14 +541,14 @@
     .price-pill{
       padding:8px 11px;
       border-radius:12px;
-      background:rgba(212,175,55,.14);
-      border:1px solid rgba(212,175,55,.30);
+      background:rgba(199,157,43,.12);
+      border:1px solid rgba(199,157,43,.28);
       font-size:.88rem;
-      color:#fff;
+      color:#5a3d0b;
     }
 
     .price-pill strong{
-      color:var(--gold2);
+      color:#8b6512;
       margin-right:4px;
     }
 
@@ -554,7 +561,7 @@
 
     .highlight-box h3{
       font-size:1.95rem;
-      color:#fff7e3;
+      color:#6f5010;
       margin-bottom:12px;
     }
 
@@ -578,13 +585,13 @@
 
     .price-table-header{
       padding:18px 22px;
-      border-bottom:1px solid rgba(255,255,255,.08);
-      background:rgba(255,255,255,.04);
+      border-bottom:1px solid rgba(120,86,16,.10);
+      background:rgba(255,248,228,.38);
     }
 
     .price-table-header h3{
       font-size:1.95rem;
-      color:#fff7e3;
+      color:#6f5010;
     }
 
     .price-table table{
@@ -596,15 +603,15 @@
     .price-table td{
       padding:14px 18px;
       text-align:left;
-      border-bottom:1px solid rgba(255,255,255,.06);
+      border-bottom:1px solid rgba(120,86,16,.08);
       font-size:.95rem;
       vertical-align:top;
     }
 
     .price-table th{
-      color:var(--gold2);
+      color:#8b6512;
       font-weight:600;
-      background:rgba(255,255,255,.03);
+      background:rgba(255,248,228,.28);
     }
 
     .price-table td{
@@ -666,7 +673,7 @@
 
     .contact-card h3{
       font-size:1.95rem;
-      color:#fff7e3;
+      color:#6f5010;
       margin-bottom:12px;
     }
 
@@ -678,7 +685,7 @@
     }
 
     .contact-row strong{
-      color:#fff;
+      color:#4b340b;
     }
 
     .cta-row{
@@ -705,7 +712,7 @@
     .notice{
       margin-top:14px;
       font-size:.92rem;
-      color:rgba(255,255,255,.74);
+      color:rgba(59,42,13,.72);
     }
 
     .whatsapp-float{
@@ -723,14 +730,14 @@
       background:linear-gradient(135deg, #2fe784, #11b862);
       color:#fff;
       font-weight:700;
-      box-shadow:0 18px 30px rgba(0,0,0,.28);
-      border:1px solid rgba(255,255,255,.18);
+      box-shadow:0 18px 30px rgba(0,0,0,.20);
+      border:1px solid rgba(255,255,255,.26);
     }
 
     footer{
       padding:34px 0 48px;
-      border-top:1px solid rgba(255,255,255,.08);
-      background:#190a26;
+      border-top:1px solid rgba(120,86,16,.14);
+      background:linear-gradient(180deg, rgba(217,184,80,.85), rgba(191,152,43,.92));
     }
 
     .footer-inner{
@@ -738,7 +745,7 @@
       flex-wrap:wrap;
       justify-content:space-between;
       gap:12px;
-      color:rgba(255,255,255,.78);
+      color:#4b340b;
       font-size:.95rem;
     }
 
@@ -1407,7 +1414,7 @@
 
         <div class="voucher-grid">
           <div class="info-box">
-            <h3 style="font-size:2rem;color:#fff7e3;margin-bottom:12px;">Wellness als Geschenkidee</h3>
+            <h3 style="font-size:2rem;color:#6f5010;margin-bottom:12px;">Wellness als Geschenkidee</h3>
             <p>
               Unsere Gutscheine eignen sich ideal für Geburtstage, Feiertage, Jubiläen oder einfach
               als liebevolle Aufmerksamkeit für Familie, Freunde oder Partner.
